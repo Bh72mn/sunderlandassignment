@@ -1,117 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
-<meta charset="utf-8">
+<title>history of sunderland afc</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #350f7c;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #580505;
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #350f7c;
-  color: rgb(253, 251, 251);
-}
-
-/* Style the content */
-.content {
-  background-color: #6d1e1e;
-  padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
-}
-
-/* Style the footer */
-.footer {
-  background-color: #350f7c;
-  padding: 10px;
-}
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
-.topnav .search-container button:hover {
-  background: #ccc;
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    
-border: 1px solid #ccc; }
-}
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;}
 </style>
 </head>
 <body>
 
-<div class="topnav">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Company<br>Name</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">contact</a> 
+    <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">gallery</a> 
 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Sunderland afc</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+     
+    </div>
+
+    <div class="w3-half">
+    
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>SAFC STATS</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Sunderland 2023/24 player Stats </p>
+    <p>This season sunderland have had numerous player play for sunderland this season have a look who has played the most this season for sunderland</p>
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+      </script>
+      <form name="myForm" action="/dbapi/api-sqlite.js" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="name">
+        <input type="submit" value="Submit">
+        </form>
+  </div>
+
+  
+  <!-- sunderland honours -->
+  <div class="w3-container" id="club Honour" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Club honours</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>leagues and cups sunderland won
+    </p>
+    <p>Formed in 1879, the club has won six top-flight titles (1892, 1893, 1895, 1902, 1913, and 1936) in the First Division, and has finished runners-up five times. The club has also won the FA Cup twice (1937 and 1973) and been runners-up twice (1913 and 1992), as well as winning the FA Charity Shield in 1936 and being finalists the following year.</p>
+    
+  </div>
+
+ 
+
+ 
+        
+   
+  
+
+  
+
+<!-- End page content -->
 </div>
 
-<div class="content">
-  <h2>Sunderland 2023/24 Player Stats</h2>
-  <p>This season sunderland have had numerous player play for Sunderland this season have a look who has played the most this season</p>
-  <div class="search-container">
-    <form action="/dbapi/api-sqlite.js">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit">Submit</button>
-</div>
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
 
-<div class="footer">
-  <p>Footer</p>
-</div>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
 </body>
 </html>
