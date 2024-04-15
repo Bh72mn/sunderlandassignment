@@ -92,14 +92,14 @@ body {font-size:16px;}
     <p>This season sunderland have had numerous player play for sunderland this season have a look who has played the most this season for sunderland</p>
     <script>
       function validateForm() {
-        let x = document.forms["myForm"]["fname"].value;
+        let x = document.forms["dbapi/api-sqlite.js"]["player"].value;
         if (x == "") {
           alert("Name must be filled out");
           return false;
         }
       }
       </script>
-      <form name="myForm" action="/client/results.html" onsubmit="return validateForm()" method="post">
+      <form name="myForm" action="results.html" onsubmit="return validateForm()" method="post">
         Name: <input type="text" name="name">
         <input type="submit" value="Submit">
         </form>
